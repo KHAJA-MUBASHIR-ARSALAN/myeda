@@ -5,7 +5,7 @@ with open("README.md", "r") as f:
 
 setup(
     name="myeda",
-    version="0.1.1",
+    version="0.1.2",
     description="Lightweight Exploratory Data Analysis library",
     author="Khaja Mubashir Arsalan",
     packages=find_packages(),
@@ -17,6 +17,7 @@ setup(
 
     long_description = description,
     long_description_content_type="text/markdown",
+    include_package_data=True,
 )
 
 
