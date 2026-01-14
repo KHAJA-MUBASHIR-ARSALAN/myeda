@@ -1,78 +1,42 @@
 # myeda
-Build a light weight library for eda.
 
+A lightweight Exploratory Data Analysis (EDA) library that provides one-line statistical summaries and optional visualizations for faster data understanding.
 
+# Features
 
-MYEDA
-
-myeda is a lightweight, fast Exploratory Data Analysis (EDA) library for pandas DataFrames.
-
-It is designed for developers and data scientists who want quick insights without heavy dependencies, auto-generated HTML reports, or slow dashboards.
-
-WHY MYEDA
-
-Lightweight and fast
-
-Minimal dependencies
-
-Explicit function calls (no magic)
-
-Modular design
-
-Suitable for large datasets
-
-PyPI-published and test-covered
-
-This library intentionally avoids:
-
-Auto HTML reports
-
-Heavy visualization frameworks
-
-Hidden computations
-
-INSTALLATION
-
-pip install myeda
-
-QUICK START
-
-import myeda
-import pandas as pd
-
-df = pd.read_csv("data.csv")
-
-myeda.dataset_overview(df)
-myeda.missing_summary(df)
-myeda.numeric_summary(df)
-myeda.categorical_summary(df)
-
-ONE-LINE EDA (ORCHESTRATOR)
-
-from myeda import EDAReport
-
-report = EDAReport(df)
-results = report.run()
-
-This returns:
-
-Dataset overview
+One-line EDA summaries
 
 Missing value analysis
 
-Numeric statistics
+Descriptive statistics
 
-Categorical statistics
+Optional visualizations (explicit, not automatic)
 
-OPTIONAL VISUALIZATIONS
+Clean, modular API
 
-Visualizations are explicit and optional.
+Beginner-friendly and extensible
 
-from myeda import (
-plot_numeric_distribution,
-plot_boxplot,
-plot_categorical_counts,
-plot_correlation_heatmap
+# Installation
+pip install myeda
+
+
+
+# Basic Usage
+import pandas as pd
+from myeda import overview, report
+
+df = pd.read_csv("titanic_dataset.csv")
+
+overview(df)
+report(df)
+
+# Visualizations (Explicit & Optional)
+
+from myeda.viz import (
+    plot_numeric_distribution,
+    plot_boxplot,
+    plot_categorical_counts,
+    plot_correlation_heatmap
 )
 
 plot_numeric_distribution(df, "Age")
@@ -80,114 +44,89 @@ plot_boxplot(df, "Fare")
 plot_categorical_counts(df, "Sex")
 plot_correlation_heatmap(df)
 
-PROJECT STRUCTURE
+
+Visualizations are never automatic — you control when to plot.
+
+# Project Structure
 
 EDA/
-│
-├── examples/
-│   ├── titanic_dataset.csv
-│   └── titanic_demo.ipynb
-│
-├── myeda/
-│   ├── __init__.py
-│   ├── report.py
-│   │
-│   ├── core/
-│   │   ├── overview.py
-│   │   ├── missing.py
-│   │   └── statistics.py
-│   │
-│   └── viz/
-│       └── visualization.py
-│
-├── tests/
-│   └── test_statistics.py
-│
-├── setup.py
-├── pyproject.toml
-├── requirements.txt
-├── README.md
-├── LICENSE
-└── .gitignore
+|-- examples/
+|   |-- titanic_dataset.csv
+|   `-- titanic_demo.ipynb
+|
+|-- myeda/
+|   |-- __init__.py
+|   |-- report.py
+|   |
+|   |-- core/
+|   |   |-- overview.py
+|   |   |-- missing.py
+|   |   `-- statistics.py
+|   |
+|   `-- viz/
+|       `-- visualization.py
+|
+|-- tests/
+|   `-- test_statistics.py
+|
+|-- setup.py
+|-- pyproject.toml
+|-- requirements.txt
+|-- README.md
+|-- LICENSE
+`-- .gitignore
 
 
-MODULE RESPONSIBILITIES
 
-overview.py
+
+# Module Responsibilities
+### core/overview.py
 
 Dataset shape
 
-Column counts by type
+Column types
 
-Memory usage
+Basic dataset information
 
-Duplicate rows
-
-missing.py
+### core/missing.py
 
 Missing value counts
 
-Missing percentages
+Missing percentage per column
 
-statistics.py
+### core/statistics.py
 
-Numeric summaries
+Mean, median, mode
 
-Categorical summaries
+Variance, standard deviation
 
-visualization.py
+Numerical summaries
 
-Histograms
+### viz/visualization.py
+
+Numeric distributions
 
 Boxplots
 
-Category counts
+Categorical counts
 
 Correlation heatmaps
 
-report.py
+# Examples
 
-Orchestrates all EDA components
+Check the examples/ directory for:
 
-Provides one-line EDA execution
+Titanic dataset
 
-DEPENDENCIES
+Jupyter notebook demonstrating full EDA workflow
 
-pandas
+# Testing
+pytest
 
-matplotlib
+# License
 
-No seaborn
-No plotly
-No Jupyter-only features
+This project is licensed under the MIT License.
 
-TESTING
-
-Tests are written using pytest.
-
-python -m pytest
-
-LICENSE
-
-MIT License
-
-ROADMAP
-
-CLI support
-
-JSON export of summaries
-
-Target-based EDA helpers
-
-Optional report export
-
-AUTHOR
+# Author
 
 Khaja Mubashir Arsalan
-
-NOTE
-
-This library is intentionally simple and explicit.
-
-If you need automated dashboards, use heavier tools.
-If you want speed, clarity, and control, myeda is designed for you.

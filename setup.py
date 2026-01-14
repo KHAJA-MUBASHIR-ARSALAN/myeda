@@ -1,25 +1,3 @@
-from setuptools import setup, find_packages
+from setuptools import setup
 
-with open("README.md", "r") as f:
-    description = f.read()
-
-setup(
-    name="myeda",
-    version="0.1.2",
-    description="Lightweight Exploratory Data Analysis library",
-    author="Khaja Mubashir Arsalan",
-    packages=find_packages(),
-    install_requires=[
-        "pandas",
-        "matplotlib",
-    ],
-    python_requires=">=3.9",
-
-    long_description = description,
-    long_description_content_type="text/markdown",
-    include_package_data=True,
-)
-
-
-
-
+setup()

@@ -1,7 +1,7 @@
 from __future__ import annotations
 
 # Version
-__version__ = "0.1.2"
+__version__ = "0.1.6"
 
 # Overview
 from myeda.core.overview import dataset_overview
