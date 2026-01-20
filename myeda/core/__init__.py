@@ -7,7 +7,7 @@ __version__ = "0.1.12"
 from myeda.core.overview import dataset_overview
 
 # Missing values
-from myeda.core.missing import missing_overview, missing_summary
+from myeda.core.missing import missing_overview, missing_summary, rows_with_missing, plot_missing
 
 # Statistics
 from myeda.core.statistics import numeric_summary, categorical_summary
@@ -28,6 +28,8 @@ __all__ = [
     "dataset_overview",
     "missing_overview",
     "missing_summary",
+    "rows_with_missing"
+    "plot_missing",
     "numeric_summary",
     "categorical_summary",
     "plot_numeric_distribution",

@@ -28,6 +28,8 @@ __all__ = [
     "dataset_overview",
     "missing_overview",
     "missing_summary",
+    "rows_with_missing"
+    "plot_missing",
     "numeric_summary",
     "categorical_summary",
     "plot_numeric_distribution",
