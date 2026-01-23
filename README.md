@@ -4,6 +4,9 @@
 [![PyPI version](https://img.shields.io/pypi/v/myeda)](https://pypi.org/project/myeda/)
 [![PyPI Downloads](https://static.pepy.tech/personalized-badge/myeda?period=total&units=INTERNATIONAL_SYSTEM&left_color=GREY&right_color=BLUE&left_text=downloads)](https://pepy.tech/projects/myeda)
 [![Monthly Downloads](https://static.pepy.tech/personalized-badge/myeda?period=monthly&units=INTERNATIONAL_SYSTEM&left_color=GREY&right_color=GREEN&left_text=monthly)](https://pepy.tech/projects/myeda)
+[![GitHub stars](https://img.shields.io/github/stars/KHAJA-MUBASHIR-ARSALAN/myeda?style=social)](https://github.com/KHAJA-MUBASHIR-ARSALAN/myeda)
+[![License](https://img.shields.io/github/license/KHAJA-MUBASHIR-ARSALAN/myeda)](https://github.com/KHAJA-MUBASHIR-ARSALAN/myeda/blob/main/LICENSE)
+
 
 
 A lightweight Exploratory Data Analysis (EDA) library that provides one-line statistical summaries and optional visualizations for faster data understanding.
