@@ -1,5 +1,8 @@
 # myeda
 
+[![PyPI Downloads](https://static.pepy.tech/personalized-badge/myeda?period=total&units=INTERNATIONAL_SYSTEM&left_color=GREY&right_color=BLUE&left_text=downloads)](https://pepy.tech/projects/myeda)
+
+
 A lightweight Exploratory Data Analysis (EDA) library that provides one-line statistical summaries and optional visualizations for faster data understanding.
 
 # Features
