@@ -1,11 +1,12 @@
 # myeda
 
-
 [![PyPI version](https://img.shields.io/pypi/v/myeda)](https://pypi.org/project/myeda/)
-[![PyPI Downloads](https://static.pepy.tech/personalized-badge/myeda?period=total&units=INTERNATIONAL_SYSTEM&left_color=GREY&right_color=BLUE&left_text=downloads)](https://pepy.tech/projects/myeda)
+[![Total Downloads](https://static.pepy.tech/personalized-badge/myeda?period=total&units=INTERNATIONAL_SYSTEM&left_color=GREY&right_color=BLUE&left_text=downloads)](https://pepy.tech/projects/myeda)
 [![Monthly Downloads](https://static.pepy.tech/personalized-badge/myeda?period=monthly&units=INTERNATIONAL_SYSTEM&left_color=GREY&right_color=GREEN&left_text=monthly)](https://pepy.tech/projects/myeda)
 [![GitHub stars](https://img.shields.io/github/stars/KHAJA-MUBASHIR-ARSALAN/myeda?style=social)](https://github.com/KHAJA-MUBASHIR-ARSALAN/myeda)
 [![License](https://img.shields.io/github/license/KHAJA-MUBASHIR-ARSALAN/myeda)](https://github.com/KHAJA-MUBASHIR-ARSALAN/myeda/blob/main/LICENSE)
+[![CI Status](https://github.com/KHAJA-MUBASHIR-ARSALAN/myeda/actions/workflows/ci.yml/badge.svg)](https://github.com/KHAJA-MUBASHIR-ARSALAN/myeda/actions/workflows/ci.yml)
+[![Python Versions](https://img.shields.io/pypi/pyversions/myeda)](https://pypi.org/project/myeda/)
 
 
 
