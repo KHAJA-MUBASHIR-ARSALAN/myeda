@@ -7,6 +7,8 @@
 [![License](https://img.shields.io/github/license/KHAJA-MUBASHIR-ARSALAN/myeda)](https://github.com/KHAJA-MUBASHIR-ARSALAN/myeda/blob/main/LICENSE)
 [![CI Status](https://github.com/KHAJA-MUBASHIR-ARSALAN/myeda/actions/workflows/ci.yml/badge.svg)](https://github.com/KHAJA-MUBASHIR-ARSALAN/myeda/actions/workflows/ci.yml)
 [![Python Versions](https://img.shields.io/pypi/pyversions/myeda)](https://pypi.org/project/myeda/)
+[![Python Versions](https://img.shields.io/pypi/pyversions/myeda?cacheSeconds=300)](https://pypi.org/project/myeda/)
+
 
 
 
